@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="night_background">#1e90ff</color>
+    <color name="night_text">#E0ffff</color>
+    <color name="construction_background">#ffff00</color>
+    <color name="construction_text">#000000</color>
+    <color name="day_background">#ffffff</color>
+    <color name="day_text">#000000</color>
+    <color name="disco_background">#ff1493</color>
+    <color name="disco_text">#00FF00</color>
+    <color name="business_background">#eee5de</color>
+    <color name="business_text">#000000</color>
+
+</resources>

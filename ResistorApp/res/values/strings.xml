@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Resistor</string>
+    <string name="action_settings">Settings</string>
+    <string name="resLeft">Left</string>
+    <string name="bandOne">BandOne</string>
+    <string name="bandTwo">BandTwo</string>
+    <string name="bandThree">BandThree</string>
+    <string name="spacer">Spacer</string>
+    <string name="tolerance">Tolerance</string>
+    <string name="resRight">Right</string>   
+    
+    <string name="res_value">resistor value</string>
+</resources>

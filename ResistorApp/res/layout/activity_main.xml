@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutGG"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/resValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="91dp"
+        android:contentDescription="@string/res_value"
+        android:gravity="center_horizontal"
+        android:text="@string/res_value" />
+
+    <RelativeLayout
+        android:id="@+id/ImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/resValue"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/colorOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/left"
+            android:layout_toRightOf="@+id/left"
+            android:contentDescription="@string/bandOne"
+            android:src="@drawable/black" />
+
+        <ImageView
+            android:id="@+id/colorTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/colorOne"
+            android:layout_toRightOf="@+id/colorOne"
+            android:contentDescription="@string/bandTwo"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/colorThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/colorTwo"
+            android:layout_toRightOf="@+id/colorTwo"
+            android:contentDescription="@string/bandThree"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/colorThree"
+            android:layout_toRightOf="@+id/colorThree"
+            android:contentDescription="@string/spacer"
+            android:src="@drawable/spacer" />
+
+        <ImageView
+            android:id="@+id/Tolerance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/spacer"
+            android:layout_toRightOf="@+id/spacer"
+            android:contentDescription="@string/tolerance"
+            android:src="@drawable/gold" />
+
+        <ImageView
+            android:id="@+id/Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Tolerance"
+            android:layout_toRightOf="@+id/Tolerance"
+            android:contentDescription="@string/resRight"
+            android:src="@drawable/resright" />
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/resLeft"
+            android:paddingLeft="25dp"
+            android:src="@drawable/resleft" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PickerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ImageLayout"
+        android:gravity="center" >
+
+        <NumberPicker
+            android:id="@+id/bandOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center" />
+
+        <NumberPicker
+            android:id="@+id/bandTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bandOne"
+            android:gravity="center" />
+
+        <NumberPicker
+            android:id="@+id/bandThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bandTwo"
+            android:gravity="center" />
+
+        <NumberPicker
+            android:id="@+id/bandTolerance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bandThree"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

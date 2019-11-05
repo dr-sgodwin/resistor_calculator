@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:app="com.daniel.resistorapp.MainActivity" >
+
+    <item
+        android:id="@+id/colours"
+        android:title="Colours">
+        <menu>
+            <group
+                android:id="@+id/menugroup1"
+                android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/night"
+                    android:title="night"/>
+                <item
+                    android:id="@+id/construction"
+                    android:title="construction"/>
+                <item
+                    android:id="@+id/disco"
+                    android:title="disco"/>
+                <item
+                    android:id="@+id/day"
+                    android:title="day"/>
+                <item
+                    android:id="@+id/business"
+                    android:title="business"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/text"
+        android:title="Text">
+        <menu>
+            <group
+                android:id="@+id/menugroup2"
+                android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/smalltext"
+                    android:title="Small Text"/>
+                <item
+                    android:id="@+id/mediumtext"
+                    android:title="Medium Text"/>
+                <item
+                    android:id="@+id/largetext"
+                    android:title="Large Text"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
